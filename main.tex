@@ -1,0 +1,156 @@
+\documentclass[12pt]{article}
+
+% ============================================
+% PACKAGES
+% ============================================
+
+% Page layout
+\usepackage[margin=1in]{geometry}
+
+% Font and encoding
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}
+
+% Math
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% Graphics and figures
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subcaption}
+
+% Tables
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{array}
+
+% Citations and bibliography
+\usepackage{natbib}
+\bibliographystyle{apa} 
+
+% Hyperlinks (load last among most packages)
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    urlcolor=blue,
+    breaklinks=true
+}
+
+% Line spacing
+\usepackage{setspace}
+\onehalfspacing
+
+% For appendix
+\usepackage{appendix}
+
+% For landscape pages (if needed for wide tables)
+\usepackage{pdflscape}
+
+% For editorial comments and TODOs
+\usepackage{xcolor}
+\newcommand{\todo}[1]{\textcolor{red}{[TODO: #1]}}
+\newcommand{\plan}[1]{\textcolor{blue}{[PLAN: #1]}}
+\newcommand{\addcite}[1]{\textcolor{orange}{[ADD CITATION: #1]}}
+\newcommand{\new}[1]{\textcolor{blue}{#1}}  % For marking new content added in revision
+
+% ============================================
+% CUSTOM COMMANDS
+% ============================================
+
+% For easier table notes
+\newcommand{\tablenote}[1]{\par\smallskip\footnotesize #1}
+
+% ============================================
+% TITLE PAGE SETUP
+% ============================================
+
+\title{\Large\textbf{Incentivizing Participation:\\
+Developing an Evidence-Based Guide for Best Practices in Survey Incentives}}
+
+\author{
+    Jon A. Krosnick\thanks{Stanford University. Email: Krosnick@stanford.edu}
+    \and
+    Resty Fufunan\thanks{Stanford Institute for Research in the Social Sciences. Email: resty@stanford.edu}
+    \and
+    Josearmando Torres\thanks{Stanford Institute for Research in the Social Sciences. Email: jtorres0@stanford.edu}
+}
+
+\date{\today}
+
+% ============================================
+% DOCUMENT BEGINS
+% ============================================
+
+\begin{document}
+
+% Title
+\maketitle
+
+% ============================================
+% ABSTRACT
+% ============================================
+
+\begin{abstract}
+In an era defined by challenges to data integrity and declining public trust, the pursuit
+of representative sample survey data has never been more critical. Falling response
+rates are thought to threaten the validity of public opinion research and its role in
+informed decision-making. While survey incentives are a common industry practice
+for boosting response rates, their application is far from standardized. Researchers
+face complex choices regarding an incentive's form (cash, voucher), timing (prepaid
+vs. promised), and amount, with little clear guidance on how to maximize participation
+while minimizing costs.\\
+
+This project, which is being developed as a section of a larger manual on optimal
+survey design, is part of the ongoing work of the newly-established Stanford Institute
+for Excellence in Survey Research (SIESR). This review of survey incentives directly
+supports SIESR's mission to advance survey methodology and disseminate findings
+not only to academics but also to media and policymakers. Synthesizing findings from
+a wide-ranging literature review of experimental research, this project moves beyond
+academic study to propose a decision-making framework for practitioners, fostering
+methodological innovation and helping to maximize confidence in survey data.\\
+
+Our research synthesizes quantitative findings to provide evidence-based
+recommendations structured around the key dimensions of incentive design:\\
+\begin{enumerate}
+    \item Timing and Form: Analyzing the powerful effect of prepaid (unconditional)
+incentives, which consistently and significantly outperform promised
+(conditional) payments. We also differentiate the efficacy of monetary versus
+non-monetary incentives, with a particular focus on the nuances between cash
+and cash alternatives (gift card, check, etc.)
+    \item Amount and Diminishing Returns: Examining the non-linear relationship
+between incentive amount and response uplift to identify optimal payment
+levels, providing clear guidance on cost-benefit ratios and diminishing marginal
+returns.
+    \item Survey Mode: Addressing how incentive effectiveness is moderated by data
+collection environments, particularly across mail, web, and mixed-mode
+surveys.
+\end{enumerate}
+Crucially, this project connects directly to the conference's focus on building trust in
+data examining survey incentives as they relate to two critical, practical concerns:\\
+\begin{itemize}
+    \item Data Quality: Assessing the finding that incentives generally do not adversely
+affect data quality (e.g., no increase in item nonresponse, satisficing, or
+measurement error).
+    \item Sample Representativeness: Investigating the impact of incentives on sample
+composition, with a focus on how incentives can effectively boost response
+rates among historically hard-to-reach populations
+\end{itemize}
+By providing a rigorous, data-driven framework for incentive design, this manual
+serves as an innovative tool to help researchers improve methodological
+transparency, maximize representativeness, and ultimately, reaffirm the critical role of
+high-quality survey research.
+
+\end{abstract}
+
+\thispagestyle{empty}  % No page number on title page
+\newpage
+\setcounter{page}{1}
+
+
+
+\end{document}
